@@ -28,7 +28,7 @@ namespace RefactoringGuru.DesignPatterns.Prototype.Conceptual
         {
             Person clone = (Person) this.MemberwiseClone();
             clone.IdInfo = new IdInfo(IdInfo.IdNumber);
-            clone.Name = String.Copy(Name);
+            clone.Name = Name;
             return clone;
         }
     }
